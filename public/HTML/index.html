@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/index.css">
+  <link rel="stylesheet" href="CSS/universal.css">
+  <title>IMG uploader</title>
+</head>
+<body>
+  <form action="/upload" enctype="multipart/form-data" class="main-conteiner" method="POST">
+    <h1 class="main-title">Upload your image</h1>
+    <p class="paragraph">File should be Jpeg, Png, ...</p>
+    <div class="img-conteiner">
+      <input type="file" name="imgInput" class="invisible-file-uploader">
+      <div class="img-user-instructions">
+        <img src="IMG/image.svg" alt="Mountain IMG" class="svg-icon">
+
+        <p class="paragraph">Drag and drop your img here</p>
+      </div>
+      <img src="" alt="" class="img-preview">
+    </div>
+    <p>Or</p>
+    <div class="fake-input-button-conteiner">
+      <button id="submit-btn" type="submit">Submit</button>
+    </div>
+  </form>
+  <script src="JS/index.js"></script>
+</body>
+</html>
