@@ -1,3 +1,4 @@
+let PORT = process.env.PORT || 3000
 const express = require('express')
 const app = express()
 
@@ -39,6 +40,7 @@ app.post('/upload', upload.single('imgInput'), (req, res, next) => {
     })
 })
 
-app.listen(3000, () => {
-    console.log('Server Running')
+
+app.listen(PORT, () => {
+    console.log('Server Running at port: ' + PORT)
 })
