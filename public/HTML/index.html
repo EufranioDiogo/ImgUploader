@@ -8,7 +8,15 @@
   <title>IMG uploader</title>
 </head>
 <body>
-  <form action="/upload" enctype="multipart/form-data" class="main-conteiner" method="POST">
+  <div class="effect-filter">
+    <div class="progress-conteiner">
+      <p class="loading-text">Uploading Imgs</p>
+      <div class="progress-bar-conteiner">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+  </div>
+  <form action="/upload" enctype="multipart/form-data" class="main-conteiner" method="POST" >
     <h1 class="main-title">Upload your image</h1>
     <p class="paragraph">File should be Jpeg, Png, ...</p>
     <div class="img-conteiner">
@@ -22,6 +30,8 @@
     </div>
     <p>Or</p>
     <div class="fake-input-button-conteiner">
+      <button class="fake-input-button">Choose Your File</button>
+      <input type="text" class="real-input-button">
       <button id="submit-btn" type="submit">Submit</button>
     </div>
   </form>

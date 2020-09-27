@@ -78,8 +78,9 @@
         border: none;
         border-radius: 0.5rem;
         position: relative;
-        z-index: 3;
-        display: block;
+        z-index: -1;
+        opacity: 0;
+        position: absolute;
     }
     .real-input-button{
         position: absolute;
@@ -87,5 +88,53 @@
         height: 100%;
         width: 100%;
         opacity: 0;
+        z-index: 2;
+    }
+    .effect-filter{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        background-color: #00000037;
+        display: none;
+        z-index: 1000;
+    }
+    .progress-conteiner{
+        position: relative;
+        width: 35%;
+        padding: 1rem 2rem;
+        border-radius: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #F6F8FB;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .loading-text{
+        margin: 1rem 0;
+        font-size: 2.5rem;
+        color: #333;
+        font-family: Poppins, sans-serif;
+        margin-bottom: 2rem;
+    }
+    .progress-bar-conteiner{
+        width: 90%;
+        margin: 2rem 0;
+        margin-top: 0;
+        height: 1.2rem;
+        background-color: #4f4f4f7a;
+        border-radius: 1.5rem;
+        position: relative;
+        overflow: hidden;
+    }
+    .progress-bar-conteiner .progress-bar{
+        width: 0%;
+        height: 100%;
+        position: absolute;
+        border-radius: 1.5rem;
+        background-color: #0095ff;
+        transition: 0.5s;
     }
 }

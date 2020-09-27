@@ -7,5 +7,48 @@
     flex-direction: column;
     align-items: center;
     padding: 2rem 1rem;
-    margin: 10rem auto;
+    margin: 5rem auto;
+}
+.operation-completed{
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 0.5rem;
+    font-size: 4.5rem;
+    background-color: #219653;
+}
+.uploaded-img{
+    font-family: Poppins, sans-serif;
+    font-size: 1.8rem;
+    color: #4F4F4F;
+    margin: 1.5rem 0;
+}
+.img-conteiner{
+    width: 90%;
+    height: 30.5rem;
+    position: relative;
+    border-radius: 1.2rem;
+    margin: 1rem 0;
+}
+.img-conteiner img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1.2rem;
+    object-fit: cover;
+    border: none;
+}
+.image-url-conteiner{
+    display: flex;
+    margin: 2rem 0;
+    align-items: center;
+}
+.copy-button{
+    border: none;
+    padding: 1rem 2rem;
+    background-color: #0095ff;
+    color: #fff;
+    border-radius: 0.5rem;
+    margin-left: 1rem;
 }

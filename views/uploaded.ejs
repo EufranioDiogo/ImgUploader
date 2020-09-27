@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/5c7edfd842.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../CSS/uploaded.css">
+  <link rel="stylesheet" href="../CSS/universal.css">
+  <title>IMG uploaded</title>
+</head>
+<body>
+  <div class="main-conteiner" >
+    <i class="far fa-check-circle operation-completed"></i>
+    <h2 class="uploaded-img">Uploaded successfully!</h2>
+    <div class="img-conteiner">
+      <img src="<%= imgUrl %>" alt="" class="img-preview">
+    </div>
+    <div class="image-url-conteiner">
+      <input type="text" name="url" id="image-url" value="<%= imgUrl %>" >
+      <button class="copy-button">Copy</button>
+    </div>
+  </div>
+  <script>
+    let imgUrl = document.querySelector('#image-url')
+    let copyBtn = document.querySelector('.copy-button')
+
+    copyBtn.addEventListener('click', ()=>{
+      imgUrl.select()
+      imgUrl.setSelectionRange(0, 99999)
+      document.execCommand('copy')
+    })
+  </script>
+</body>
+</html>

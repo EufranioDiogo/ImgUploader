@@ -1,0 +1,3 @@
+/api/services/*.json
+.env
+/node_modules
