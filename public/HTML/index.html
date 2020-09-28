@@ -10,7 +10,7 @@
 <body>
   <div class="effect-filter">
     <div class="progress-conteiner">
-      <p class="loading-text">Uploading Imgs</p>
+      <p class="loading-text">Uploading Img...</p>
       <div class="progress-bar-conteiner">
         <div class="progress-bar"></div>
       </div>
@@ -20,7 +20,7 @@
     <h1 class="main-title">Upload your image</h1>
     <p class="paragraph">File should be Jpeg, Png, ...</p>
     <div class="img-conteiner">
-      <input type="file" name="imgInput" class="invisible-file-uploader">
+      <input type="file" name="imgInput" class="invisible-file-uploader" accept=".gif,.jpg,.jpeg,.png">
       <div class="img-user-instructions">
         <img src="IMG/image.svg" alt="Mountain IMG" class="svg-icon">
 
@@ -31,7 +31,7 @@
     <p>Or</p>
     <div class="fake-input-button-conteiner">
       <button class="fake-input-button">Choose Your File</button>
-      <input type="text" class="real-input-button">
+      <input type="file" class="real-input-button" accept=".gif,.jpg,.jpeg,.png">
       <button id="submit-btn" type="submit">Submit</button>
     </div>
   </form>

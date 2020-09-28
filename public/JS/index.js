@@ -15,8 +15,7 @@ function runUploadEffect(){
     progressBarProgress += 10
 }
 
-
-fileInputBigConteiner.onchange = () => {
+function processFile(){
     fileReader.onload = () => {
         img.src = fileReader.result
         document.querySelector('.img-preview').src = img.src
@@ -32,6 +31,12 @@ fileInputBigConteiner.onchange = () => {
     fileReader.readAsDataURL(fileInputBigConteiner.files[0])
 }
 
+
+fileInputBigConteiner.onchange = () => {
+    processFile()
+}
+
 fileInputButton.onchange = () => {
     fileInputBigConteiner.files = fileInputButton.files
+    processFile()
 }
